@@ -1,0 +1,30 @@
+<style>
+nav{
+float:left;
+max-width:140px;
+margin:1;
+padding:lem;
+background:#4574;
+}
+
+nav ul{
+list-style-type:none;
+padding:lem;
+}
+
+article{
+margin-left:120px;
+border-left:1px solid gray;
+padding:7;
+}
+</style>
+</div>
+<div>
+<style>
+.container {
+background-color: rgba(0, 0,0, 0.3);
+border-bottom-left-radius: 100% 100%;
+border-bottom-right-radius: 100% 100%;
+}
+</div>
+</style>
