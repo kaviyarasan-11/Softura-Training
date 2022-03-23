@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function vaLogin() {
+            var un = document.getElementById("name").value;
+            var pd = document.getElementById("password").value;
+            var ampt = 3;
+            var n = 0;
+            if (n<ampt) {
+                if (un == "Nithin" && pd == "0711s") {
+                    alert("Login Successful");
+                    ampt++;
+                }
+                else
+                    alert("Username and Password mismatch");
+                
+            }
+            else
+            {
+                document.write("Maximum number attempts exceed");
+            }
+            
+           
+        }</script>
+       
+</head>
+<body>
+    <div>
+    <form id="frm1" method="post" name="myForm">
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <table width="40%" height="40%" bgcolor="palegreen" align="center">
+
+            <tr>
+                <td colspan=2><center><font size=4><b>Login Page</b></font></center></td>
+            </tr>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" size=25 name="uname" id="name" ></td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td><input type="Password" size=25 name="pword" id="password" required></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="Login" onclick="VaLogin()"></td>
+            </tr>
+
+        </table>
+    </form>
+     </div>
+
+
+</body>
+</html>
