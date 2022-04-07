@@ -19,7 +19,7 @@ namespace Lynq
                  new BookStore() { BookID = 4, Title = "The Great Big Lion", Author = "Chryseis Knight", Price =700 },
                  new BookStore() { BookID = 5, Title = "In an ideal world", Author ="Bamal", Price =250},
                 };
-            //Display all Data
+            
             var myQry = from str in StrData
                         select str;
             foreach (var s in myQry)
@@ -27,21 +27,21 @@ namespace Lynq
 
             Console.WriteLine("*********");
 
-            //Order by Author
+            
             var stuqry = StrData.OrderBy(s => s.Author);
             foreach (var s in stuqry)
                 Console.WriteLine(s.Author);
 
             Console.WriteLine("*********");
 
-            //order by Price
+            
             var stuqry2 = StrData.OrderBy(s => s.Price);
             foreach (var s in stuqry2)
                 Console.WriteLine(s.Price);
 
             Console.WriteLine("*********");
 
-            //particular author
+            
             string A = Console.ReadLine();
             var stuqry3 = from str in StrData
                           select str;
